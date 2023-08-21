@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+/* Style for the background */
+.background {
+  position: relative;
+  background-image:url(../img/fashion.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Style for the content of the Home page */
+.content {
+  position: absolute;
+  top: 20%; /* Position content vertically in the middle */
+  left: 20%; /* Position content horizontally in the middle */
+  transform: translate(-50%, -50%); /* Center content */
+  padding-top: 30px;
+}
+
+.content h2 {
+  text-decoration: overline;
+  text-decoration-color: darksalmon;
+}
+.content:hover {
+  color: lightgray;
+  cursor: pointer;
+}
