@@ -39,7 +39,7 @@
       <div><img src="img/women-img1.jpg" alt="none" class="big-img" /></div>
       <div class="icon-bag">
         <img src="img/bag.jpg" alt="none" class="bag" />
-        <a href="Look inside" class="look-inside">Look inside</a>
+        <button class="look-inside">Look inside</button>
       </div>
       <div class="container-products">
         <div class="bag-product">
@@ -48,23 +48,39 @@
           <div class="bag-description">
             <h6>Balck Angle</h6>
             <p>260<span>dt</span></p>
-            <button>Add</button>
+            <button
+              img-prod="img/women-img2.jpg"
+              price-prod="260"
+              name-prod="Balck Angel"
+              class="add-me"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/women-img3.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Dark level</h6>
-            <p>150<span> Dt</span></p>
-            <button>Add</button>
+            <p>150<span> dt</span></p>
+            <button
+              img-prod="img/women-img3.jpg"
+              name-prod="Dark level"
+              price-prod="150"
+              class="add-me"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/men1.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Over</h6>
-            <p>275 <span> Dt</span></p>
-            <button class="add-cart">Add</button>
+            <p>275 <span> dt</span></p>
+            <button img-prod="img/men1.jpg" name-prod="Over" price-prod="275">
+              add
+            </button>
           </div>
         </div>
 
@@ -72,49 +88,81 @@
           <img src="img/women-img7.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Bad Angel</h6>
-            <p>360 <span> Dt</span></p>
-            <button >Add</button>
+            <p>360 <span> dt</span></p>
+            <button
+              img-prod="img/women-img7.jpg"
+              price-prod="360"
+              name-prod="Bad Angel"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/women-img8.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Better than Befor</h6>
-            <p>250<span> Dt</span></p>
-            <button>Add</button>
+            <p>250<span> dt</span></p>
+            <button
+              img-prod="img/women-img8.jpg"
+              price-prod="250"
+              name-prod="Better than Befor"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/women-img9.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>MOOD</h6>
-            <p>190 <span> Dt</span></p>
-            <button>Add</button>
+            <p>190 <span> dt</span></p>
+            <button
+              img-prod="img/women-img9.jpg"
+              price-prod="190"
+              name-prod="MOOD"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/women-img10.jpg" alt="none" class="product" />
           <div class="bag-description">
-            <h6>Nothing </h6>
-            <p>240 <span> Dt</span></p>
-            <button>Add</button>
+            <h6>Nothing</h6>
+            <p>240 <span> dt</span></p>
+            <button
+              img-prod="img/women-img10.jpg"
+              price-prod="240"
+              name-prod="Nothing"
+            >
+              Add
+            </button>
           </div>
         </div>
         <div class="bag-product">
           <img src="img/men2.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Lost</h6>
-            <p>270 <span> Dt</span></p>
-            <button>Add</button>
+            <p>270 <span> dt</span></p>
+            <button img-prod="img/men2.jpg" price-prod="270" name-prod="Lost">
+              Add
+            </button>
           </div>
         </div>
 
         <div class="bag-product">
           <img src="img/men5.jpg" alt="none" class="product" />
           <div class="bag-description">
-            <h6>Hot Evim</h6>
-            <p>340 <span> Dt</span></p>
-            <button>Add</button>
+            <h6>Hot Evil</h6>
+            <p>340 <span> dt</span></p>
+            <button
+              img-prod="img/men5.jpg"
+              price-prod="340"
+              name-prod="Hot Evil"
+            >
+              Add
+            </button>
           </div>
         </div>
 
@@ -122,14 +170,23 @@
           <img src="img/women44.jpg" alt="none" class="product" />
           <div class="bag-description">
             <h6>Yellow-dark</h6>
-            <p>410 <span> Dt</span></p>
-            <button>Add</button>
+            <p>410 <span> dt</span></p>
+            <button
+              img-prod="img/women44.jpg"
+              price-prod="410"
+              name-prod="Yellow-dark"
+            >
+              Add
+            </button>
           </div>
         </div>
       </div>
     </section>
     <div id="cart">
-
+      <h1>You cart</h1>
+      <p id="close-button">X</p>
+      <button class="remove-all">Delete all</button>
+      <div id="cart-content"></div>
     </div>
     <script src="script.js"></script>
   </body>

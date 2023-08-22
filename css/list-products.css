@@ -8,19 +8,24 @@ body {
 .icon-bag {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .bag {
   width: 100px;
   height: 100px;
   padding-left: 1000px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .look-inside {
-  padding-left: 1005px;
+  margin-left:74%;
   text-decoration: none;
   color: gray;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
 }
 .look-inside:hover {
   color: darkgrey;
@@ -49,6 +54,8 @@ body {
   height: 400px;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  padding-bottom: 100px;
+  margin-top: -40px;
 }
 
 .product {
@@ -66,16 +73,62 @@ body {
 p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    margin-top: -20px;
-    font-size: 15px;
+  margin-top: -20px;
+  font-size: 15px;
 }
 button {
   width: 80px;
-  background-color: gray;
+  background-color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
 }
-button:hover{
-  background-color:pink;
+button:hover {
+  /* background-color: pink; */
   cursor: pointer;
+}
+/* style for the popup cart  */
+#cart {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Styles for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.style-cart {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  align-items: center;
+  font-size: 25px;
+  background-color: burlywood;
+}
+.style-cart img {
+  width: 150px;
+  height: 150px;
+  margin-right: -50px;
+}
+
+.style-cart button {
+  width: fit-content;
+}
+.total {
+  width: fit-content;
+  height: 30px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  margin-left: 800px;
+  border-style: outset;
 }
