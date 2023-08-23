@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Display the total price
     const totalContent = `
-    <div class="total">
+    <div class="price">
       <h6>Total Price: ${totalPrice.toFixed(2)} Dt</h6>
     </div>
   `;

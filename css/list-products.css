@@ -140,6 +140,142 @@ p {
   align-items: center;
   gap: 10px;
 }
+/* Style for the icon-bag */
+.icon-bag {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.bag {
+  width: 100px;
+  height: 100px;
+  padding-left: 1000px;
+  padding-top: 10px;
+}
+.look-inside {
+  margin-left: 74%;
+  text-decoration: none;
+  color: gray;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+.look-inside:hover {
+  color: darkgrey;
+}
+/* style for  the products */
+.tile-products {
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.models {
+  width: 100px;
+  height: 100px;
+  margin-left: 55px;
+  margin-bottom: -25px;
+}
+.big-img {
+  width: 100%;
+}
+.container-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 400px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-bottom: 100px;
+  margin-top: -40px;
+}
+
+.product {
+  width: 300px;
+  height: 300px;
+}
+/* style for the products */
+
+.bag-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+}
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: -20px;
+  font-size: 15px;
+}
+.bag-description button {
+  width: 80px;
+  background-color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+}
+.bag-description button:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+/* style for the popup cart  */
+#cart {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 400px;
+  width: 60%;
+}
+
+/* Styles for the close button */
+#close-button {
+  position: fixed;
+  font-size: larger;
+  top: 5%;
+  right: 2%;
+  width: 20px;
+  text-align: center;
+}
+#close-button:hover {
+  color: white;
+  cursor: pointer;
+
+  background-color: brown;
+}
+/* style for cart content  */
+.poubelle {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.img-prod {
+  width: 150px;
+  height: 150px;
+  margin-right: -50px;
+}
+
+.prod {
+  line-height: 0%;
+}
+.add-remove {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  align-items: center;
+  gap: 10px;
+}
 
 .style-cart {
   display: flex;
@@ -147,14 +283,54 @@ p {
   align-items: center;
   font-size: 25px;
   width: 80%;
+  scroll-behavior: smooth;
 }
 
-.total {
-  width: 100px;
-  height: 50px;
+.Oops {
+  display: flex;
+  justify-content: center;
   font-size: larger;
-  /* text-align: start; */
-  /* margin-left: 700px; */
+}
+
+/* style for add-remove-out of habit-delete-all  buttons */
+.add-button {
+  color: aliceblue;
+  background-color: black;
+}
+.add-button:hover {
+  color: grey;
+}
+.remove-button {
+  color: aliceblue;
+  background-color: black;
+}
+.remove-button:hover {
+  color: grey;
+}
+
+.remove {
+  color: aliceblue;
+  background-color: black;
+}
+.remove:hover {
+  color: grey;
+}
+.delete-all {
+  display: none;
+  color: aliceblue;
+  background-color: black;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.delete-all:hover {
+  color: grey;
+}
+
+.price {
+  font-size: larger;
+  width: fit-content;
 }
 .Oops {
   display: flex;
