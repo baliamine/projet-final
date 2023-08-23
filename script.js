@@ -1,23 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
   const itemCart = [];
   const popUp = document.getElementById("cart");
+  const deleteAll = document.getElementsByClassName("delete-all")[0];
   const cartItems = document.getElementById("cart-content");
   const openCart = document.getElementsByClassName("look-inside")[0];
+  console.log(openCart);
+
   openCart.addEventListener("click", () => {
-    cartItems.innerHTML = "";
     popUp.style.display = "block";
   });
   const hideCart = document.getElementById("close-button");
   hideCart.addEventListener("click", () => {
     popUp.style.display = "none";
   });
-  const buttons = document.getElementsByClassName("add-me");
-  console.log(buttons)
+  const buttons = document.querySelectorAll("button");
+  console.log(buttons);
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const nameProduct = button.getAttribute("name-prod");
       const priceProduct = button.getAttribute("price-prod");
       const img = button.getAttribute("img-prod");
+      deleteAll.style.display = "block";
       const existingItem = itemCart.find(
         (item) => item.nameProduct === nameProduct
       );
@@ -32,21 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function displayCart() {
-   
     cartItems.innerHTML = "";
     let totalPrice = 0; // Initialize the total price
-    
+
     itemCart.forEach((item) => {
       const cartContent = `
       <div class="style-cart">
-        <img src="${item.img}" />
+       <img  src="../img/poubelle.jfif" class ="poubelle"  data-name="${item.nameProduct}"/>
+        <img class="img-prod" src="${item.img}" />
+        <div class="prod">
         <h6>${item.nameProduct}</h6>
         <h6>${item.priceProduct} Dt</h6>
+        </div>
+        <div class="add-remove">
         <button class="add-button" data-name="${item.nameProduct}">+</button>
-        <h6>Quantity: ${item.quantity}</h6>
-        <button class="remove-button" data-name="${item.nameProduct}">-</button>
-        <button class="remove" data-name="${item.nameProduct}">OUT of Habit</button>
-      </div>
+        <h6>${item.quantity}</h6>
+        <button class="remove-button" data-name="${item.nameProduct}">-</button> 
+        </div>
+        </div>
+       
     `;
       cartItems.innerHTML += cartContent;
       // Calculate the price for this item and add it to the total price
@@ -86,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    const removeProductButtons = document.querySelectorAll(".remove");
+    const removeProductButtons = document.querySelectorAll(".poubelle");
     removeProductButtons.forEach((button) => {
       button.addEventListener("click", () => {
         const itemName = button.getAttribute("data-name");
@@ -99,5 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+    
+    deleteAll.addEventListener("click", () => {
+      itemCart.length = 0; // Clear the array by setting its length to 0
+      displayCart(); // Call displayCart to update the UI
+    });
+    
   }
 });
