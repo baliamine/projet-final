@@ -1,18 +1,59 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    background-color: pink;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: gray;
+}
+/* style for title */
+.title {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 50px;
+}
+.contact-us {
+  background-color: dimgrey;
+  height: 50px;
+  padding-top: 5px;
+}
+.contact-us:hover {
+  background-color: black;
+  color: wheat;
+  cursor: pointer;
+}
 
-  .title{
-    margin-left: 50px;
-    margin-top: 60px;
-  }
-  .Contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    
-  } 
+/* style for img  */
+.img {
+  width: 400px;
+  height: 400px;
+  margin-right: 35px;
+}
+/* style for content  */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 40px;
+}
+.contact-us-content {
+  margin-top: -400px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding-left: 40px;
+  gap: 10px;
+  padding-top: 30px;
+}
+.submit {
+  width: max-content;
+  align-self: center;
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: black;
+  color: wheat;
+  cursor: pointer;
+}
+#email {
+  height: 25px;
+}
