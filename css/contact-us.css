@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  background-color: gray;
 }
 /* style for title */
 .title {
@@ -12,11 +11,8 @@ body {
   padding-top: 50px;
 }
 .contact-us {
-  background-color: dimgrey;
   height: 50px;
   padding-top: 5px;
-}
-.contact-us:hover {
   background-color: black;
   color: wheat;
   cursor: pointer;
@@ -43,17 +39,70 @@ body {
   padding-left: 40px;
   gap: 10px;
   padding-top: 30px;
+  box-shadow: 0px 8px 15px pink; align-items: center;
+  margin-left: 2%;
+  padding-bottom: 2%;
+
+  
 }
+
 .submit {
-  width: max-content;
-  align-self: center;
-  margin-top: 10px;
-}
-.submit:hover {
   background-color: black;
   color: wheat;
   cursor: pointer;
+  width: max-content;
+  align-self: center;
+  margin-top: 10px;
+  width: 120px;
+  height: 30px;
 }
-#email {
-  height: 25px;
+.submit:hover {
+  color: black;
+  background-color: pink;
+}
+
+input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 300px;
+  height: 20px; /* Increased height for better aesthetics */
+  padding: 10px; /* Adding some padding for better spacing */
+  border: none; /* Removing the default border */
+  border-radius: 5px; /* Adding a slight border radius */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+  font-size: 16px;
+  color: #333; /* Text color */
+  background-color: #f3eaea; /* Background color */
+  outline: none; /* Removing the default focus outline */
+  transition: box-shadow 0.3s ease; /* Adding a smooth transition effect */
+}
+
+/* Adding a hover effect */
+input:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a focus effect */
+input:focus {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+#message {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 10px; /* Adding some padding for better spacing */
+  border: none; /* Removing the default border */
+  border-radius: 5px; /* Adding a slight border radius */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+  font-size: 16px;
+  color: #333; /* Text color */
+  background-color:  #f3eaea; /* Background color */
+  outline: none; /* Removing the default focus outline */
+  transition: box-shadow 0.3s ease; /* Adding a smooth transition effect */
+}
+#message:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+#message:focus {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
 }

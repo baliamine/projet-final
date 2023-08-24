@@ -30,10 +30,32 @@ label {
   color: beige;
 
 }
-input{
-    width: 300px;
-    height: 25px;
+input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 300px;
+  height: 20px; /* Increased height for better aesthetics */
+  padding: 10px; /* Adding some padding for better spacing */
+  border: none; /* Removing the default border */
+  border-radius: 5px; /* Adding a slight border radius */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+  font-size: 16px;
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Background color */
+  outline: none; /* Removing the default focus outline */
+  transition: box-shadow 0.3s ease; /* Adding a smooth transition effect */
 }
+
+/* Adding a hover effect */
+input:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a focus effect */
+input:focus {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
 .submit {
   width: 90px;
   margin-top: 15px;

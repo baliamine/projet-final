@@ -35,7 +35,7 @@ body {
   margin-top: -45px;
   color: gray;
 }
-.img {
+.IMG {
   width: 400px;
   height: 200px;
   margin-left: 505px;
@@ -66,4 +66,32 @@ body {
 .our-img {
   height: 300px;
   width: 300px;
+}
+
+/* style for feed back  */
+.img {
+  width: 160px;
+  height: 160px;
+  margin-left: -10px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+  border: 2px solid #ffffff; /* Optional: Adds a white border around the image */
+  margin-top: 10px;
+}
+.client {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-right: 10px;
+  padding-left: 50px;
+}
+.client p {
+  margin-top: 70px;
+  margin-right: 50px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.FeedBack{
+  margin-bottom: 20px;
+ 
 }
